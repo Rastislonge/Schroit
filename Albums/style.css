@@ -1,0 +1,162 @@
+body {
+    background-color: rgb(43, 43, 43);
+  }
+
+nav {
+    position: absolute;
+    top: 260px;
+    right: 250px;
+}
+
+ul 
+{
+    list-style-type: none;
+}
+
+li {
+    margin: 30px 0;
+    width: auto;
+  }
+
+p {
+    display: inline;
+}
+
+#schroit {
+    color: white;
+    font-family: impact;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#schroit:hover{
+    text-decoration: underline;
+}
+
+#albums {
+    color: white;
+    font-family: impact;
+    font-size: 40px;
+    padding-bottom: 50px;
+    text-decoration: none;
+}
+#albums:hover{
+    text-decoration: underline;
+}
+
+#artists{
+    position: absolute;
+    color: white;
+    font-family: impact;
+    font-size: 48px;
+    right: 350px;
+}
+#artists-sep{
+    position: absolute;
+    width: 32%;
+    right: 0px;
+    top: 220px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: max-content;
+    height: max-content;
+    justify-content: top;
+    align-items: top;
+}
+
+#cover {
+    width: 250px;
+    height: 250px;
+}
+
+#topdatalist {
+    position: absolute;
+    left: 250px;
+    top : -50px;
+}
+
+#topdata {
+    color: white;
+    font-family: impact;
+    font-size: 20px;
+}
+
+#video {
+    position: absolute;
+    left: 0;
+    width: 1000px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.container #title {
+    color: white;
+    font-family: impact;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.7;
+    position: absolute;
+    bottom: -80px;
+    left: 10px;
+}
+.container:hover #title {
+    opacity: 1;
+}
+
+.container #artist {
+    color: white;
+    font-family: impact;
+    font-size: 24px;
+    opacity: 0.7;
+    position: absolute;
+    bottom: -80px;
+    left: 165px;
+}
+.container:hover #artist {
+    opacity: 1;
+}
+
+.controls {
+    position: absolute;
+    bottom: -280px;
+    width: 980px;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.2;
+    transition: opacity 0.4s;
+}
+.container:hover .controls {
+    opacity: 1;
+}
+.container .controls button {
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 2px 1px 2px #000;
+    border: none;
+    cursor: pointer;
+}
+.container .controls .timeline {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.container .controls .timeline .bar{
+    background: rgb(1, 1, 65);
+    height: 4px;
+    flex: 1;
+}
+.container .controls .timeline .bar .inner{
+    background: #ccc;
+    width: 0%;
+    height: 100%;
+}
+.fa {
+    font-size: 20px !important;
+}
