@@ -20,5 +20,5 @@ $i++
 }
 
 #Because PS is so bad at garbarge collection (It might as well collect itself)
-$Albums = $null
-$Artists = $null
+$AlbumsArr = $null
+$ArtistsArr = $null
