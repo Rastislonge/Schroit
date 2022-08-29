@@ -1,44 +1,47 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+<link href="..\..\style.css" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" referrerpolicy="no-referrer" rel="stylesheet">
+</link></head>
 <body>
-    <a id="schroit" href="#">Schroit</a>
-    <hr>
-    <p id=artists>Artists</p>
-    <nav>
-        <ul id=albums>
-            <li><a href="#">Flifmille</a></li>
-            <li><a href="#">HandBurgalor</a></li>
-            <li><a href="#">Mint Miracle</a></li>
-            <li><a href="#">Pattywack</a></li>
-            <li><a href="#">Yoyo Wiggins</a></li>
-        </ul>
-    </nav>
-    <hr id="artists-sep">
-    <video id="video" onclick="play(event)" src="Assets/Webm/Copper Wires.webm" id="video"></video>
-    <div class="container">
-        <p id="title">Copper Wires | </p>
-        <p id="artist">Flifmille</p>
-        <ul id="topdatalist">
-            <li id="topdata">Title:&nbsp;Copper&nbsp;Wires</li>
-            <li id="topdata">Album:&nbsp;Forced&nbsp;Allegiance</li>
-            <li id="topdata">Artist:&nbsp;Flifmille</li>
-        </ul>
-        <img id="cover" src="Assets/Forced Allegiance.jpg">
-        <div class="controls">
-            <button onclick="play(event)"><i class="fa fa-play"></i><i class="fa fa-pause"></i></button>
-            <button onclick="rewind(event)"><i class="fa fa-fast-backward"></i></button>
-            <div class="timeline">
-                <div class="bar">
-                    <div class="inner"></div>
-                </div>
-            </div>
-            <button onclick="forward(event)"><i class="fa fa-fast-forward"></i></button>
-        </div>
-    </div>
-    <script src="../../script.js"></script>
+<a href="#" id="schroit">Schroit</a>
+<hr/>
+<p id="artists">Artists</p>
+<nav>
+<ul id="albums">
+<li><a href="#">Flifmille</a></li>
+<li><a href="#">HandBurgalor</a></li>
+<li><a href="#">Mint Miracle</a></li>
+<li><a href="#">Pattywack</a></li>
+<li><a href="#">Yoyo Wiggins</a></li>
+</ul>
+</nav>
+<hr id="artists-sep"/>
+<video id="video" onclick="play(event)" src="Assets\Webm\Copper Wires.webm"></video>
+<div class="container">
+<div class="flex-container">
+<div class="fixed-width"></div>
+<div class="overflow-text"><p id="title">Copper Wires&nbsp;|&nbsp;Flifmille</p></div>
+</div>
+<ul id="topdatalist">
+<li id="topdata">Title:&nbsp;Copper&nbsp;Wires</li>
+<li id="topdata">Album:&nbsp;Forced&nbsp;Allegiance</li>
+<li id="topdata">Artist:&nbsp;Flifmille</li>
+</ul>
+<img id="cover" src="Assets\Forced Allegiance.jpg"/>
+<div class="controls">
+<button onclick="play(event)"><i class="fa fa-play"></i><i class="fa fa-pause"></i></button>
+<button onclick="rewind(event)"><i class="fa fa-fast-backward"></i></button>
+<div class="timeline">
+<div class="bar">
+<div class="inner"></div>
+</div>
+</div>
+<button onclick="forward(event)"><i class="fa fa-fast-forward"></i></button>
+</div>
+</div>
+<script src="..\..\script.js"></script>
 </body>
 </html>

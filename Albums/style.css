@@ -18,6 +18,14 @@ li {
     width: auto;
   }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
 p {
     display: inline;
 }
@@ -27,10 +35,6 @@ p {
     font-family: impact;
     font-size: 80px;
     font-weight: bold;
-    text-decoration: none;
-}
-#schroit:hover{
-    text-decoration: underline;
 }
 
 #albums {
@@ -40,9 +44,6 @@ p {
     padding-bottom: 50px;
     text-decoration: none;
 }
-#albums:hover{
-    text-decoration: underline;
-}
 
 #artists{
     position: absolute;
@@ -50,6 +51,7 @@ p {
     font-family: impact;
     font-size: 48px;
     right: 350px;
+    
 }
 #artists-sep{
     position: absolute;
@@ -68,20 +70,22 @@ p {
 }
 
 #cover {
+    position: absolute;
     width: 250px;
     height: 250px;
 }
 
 #topdatalist {
     position: absolute;
-    left: 250px;
+    left: 220px;
     top : -50px;
+    word-break: break-word;
 }
 
 #topdata {
     color: white;
     font-family: impact;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 #video {
@@ -92,6 +96,26 @@ p {
     border-radius: 20px;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+  }
+  
+  .fixed-width {
+    width: 500px;
+  }
+  
+  .fixed-width,
+  .overflow-text {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .overflow-text {
+    flex-grow: 1;
+  }
+
 .container #title {
     color: white;
     font-family: impact;
@@ -99,29 +123,16 @@ p {
     font-weight: bold;
     opacity: 0.7;
     position: absolute;
-    bottom: -80px;
-    left: 10px;
+    bottom: -330px;
+    left: 1px;
 }
 .container:hover #title {
     opacity: 1;
 }
 
-.container #artist {
-    color: white;
-    font-family: impact;
-    font-size: 24px;
-    opacity: 0.7;
-    position: absolute;
-    bottom: -80px;
-    left: 165px;
-}
-.container:hover #artist {
-    opacity: 1;
-}
-
 .controls {
     position: absolute;
-    bottom: -280px;
+    bottom: -530px;
     width: 980px;
     display: flex;
     justify-content: space-around;

@@ -25,22 +25,7 @@ const play = (e) => {
         video.pause()
     }
 }
-// trigger fullscreen
-const fullScreen = (e) => {
-    e.preventDefault()
-    video.requestFullscreen()
-}
-// download the video
-const download = (e) => {
-    e.preventDefault()
-    let a = document.createElement('a')
-    a.href = video.src 
-    a.target = "_blank"
-    a.download = ""
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-}
+
 // rewind the current time
 const rewind = (e) => {
     video.currentTime = video.currentTime - ((video.duration/100) * 5)
